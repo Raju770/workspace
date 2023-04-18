@@ -1,0 +1,9 @@
+Devops target 
+
+Linux         -        9TH APR
+GIT           -        16TH APR
+JENKINS       -        30TH APR
+DOCK & KUB    -        20TH MAY
+ANSIBLE       -        25TH MAY
+TERRAFORM     -        28TH MAY
+AWS           -        1ST JUNE

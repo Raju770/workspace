@@ -1,0 +1,73 @@
+
+                 {GIT-Global Information Tracker}
+
+
+version countrol system
+
+VCS means it is a system where number are codes are kept in this mission and ever one can acces the others code
+
+the VCS performs three types
+
+1.it will collect all the codes and make into single code
+
+2.it will show the how is uploading and modifing with date and time
+
+3.it will keep the old file we upload and new files also
+
+there are two types of VCS
+1. Centralised- directly uploaded into remote repository
+
+2. Distributed- first uploaded into local repository after all the code is ok the remote repository 
+
+ for using folder or opening the folder in git "cd path" we will go into that folder
+BUt when the git commands to work with that folder "git init" we can now use the git commands to that folder
+
+The code which is stored in folder is called as the 
+
+Working space ---> stagging area ---> loacal Repository
+
+  "                     "                  "
+untracked file     Indexed Files       commited Files
+
+When we want to send untracked files to indexed file "git add filename"
+
+To send all untracked files to indexed file "git add . "
+
+To undo the files from indexed files to untracked file "git rm --cached filename"
+
+To send the all indexed files to commited files "git commit -m filename or folder name"
+
+To see the commited files "git Log"
+
+when we have a personal data we dont want to send that data to local repository than we can send all tha file to new file ".gitignore" git will never touch this files
+
+Branchers
+==================
+1 To see the list of local branches
+  git branch
+
+2 To see the list all branches local and remote
+  git branch -a
+
+3 To create a branch
+  git branch branch_name
+
+4 To move into a branch
+  git checkout branch_name
+
+5 To create a branch and also move into it
+  git checkout -b branch_name
+
+6 To merge a branch
+  git merge branch_name
+
+7 To delete a branch that is merged
+  git branch -d branch_name 
+  This is also called as soft delete
+
+8 To delete a branch that is not merged
+  git branch -D branch_name
+  This is also known as hard delete	
+	
+
+

@@ -1,0 +1,165 @@
+                              LINUX 
+
+"whoami" to know the user
+"exit" to logout
+"pwd" present working directory
+"touch" to create a file
+"ls" list of file 
+"cat filename"                to show the data in file
+"cat > filename"              to store the data in file
+"cat >> filename"             to edit the data in file
+                              
+                           Directory
+
+directory is the kind of folder
+"cat"             used for files 
+"mkdir"           used for folder
+
+"mkdir filename"            used to create the folder
+"cd filename"               to edit or to create the file in the specified folder
+"cd.. "                     to exit the folder
+"cd"                        used for the exit from folder
+"rm filename"               to delete the file 
+"rm -r filename"            to delete the directory
+"ls -a" and "ls -a -l"      to see the list of hidden and an visible files
+"ls -lah"                   shows all the list with human reding format 
+"ls -lat"                   shows the file in time format
+"man ls"                    shows all the ls commands and uses
+"cp filename"               for copy of file and directory
+"mv filename"               to cut and move the file
+"mv old filename 
+ to new filename"           mv is also used to rename the folder
+                           
+                              Link
+
+There two types of links 1. soft link
+                         2. hard link
+
+1.for soft link when the main file is deleted the link file also deleted and usless
+2.for hard link when we main file delete still the file can be used
+
+"ln -s filename filename (which file we want to link)" this will link(soft) the files
+"ln filename filename" if we delete the main file also the link file sill existes
+
+                             TEXT PROCESSING TOOLS
+
+"head filename" will show the first 10 link of the file
+"head -(how many lines u need) filename" shows how many lines we requred
+"tail filename" it will show last 10 lines of the file
+"tail -(how many lines u need) filename" shows how many lines we requred
+
+                                GREEP
+
+"greep word we want filename" it will show the word we need in the file
+"greep -(?)word we want filename;
+                               -i = iggore the cases
+                               -n = show the line number of the word
+                               -v = revise word
+"wc" word count it well show links,words,character 
+"sort filename" well arrange the data in the short manner 
+"sort -n filename" well sort the date in numarical wise  
+                     
+                                 redirection
+
+">"               redirection is the command which send the error data into file
+">"               output redirection whe we get any out if character we need use this  
+"2>"              if we want to store the error data into file we use this
+"&>"              if we dont know wether it is output or error if we need to use this
+
+                                        PIPING
+
+"|" symbel of piping
+for using two commands on one command | piping is used
+EX 
+1. if there is a data of 30 link we need 6-15 lines data
+"head -15 filename | tail -10" 
+2. if need the word from the file
+""head -15 filename | tail -10 | word" 
+
+This piping (|) can do lot of commands in one command
+
+IF the first charatar start with "-" regular file
+                                 "d" directory
+                                 "l" soft link file
+
+
+                                    PERMISSIONS
+
+-rwe-rw-r-- file three rwe is ower permission
+            secound thee rw- is group permissions
+            third r-- is others permissions
+To modife this permissions "chmod"
+
+TO CHANGE THE PERMISSIONS there are two types 1. number format
+                                              2. alphabet format
+          
+                                Number format 
+
+Read-4 (r)
+write-2 (w)
+execute-1 (x)
+
+To change the permission of the file use the above numbers 4,2,1
+EX. "chmod 735 filename" well look the file permission like this {rwx-wxr-x}
+
+ 1.To see the linux structure like {c drive D drive} "df -h"
+ 2.To see the storeage in linux "free -m"
+ 3.To see check the processes running "ps"
+ 4.To see the backgood running processes "ps -ef"
+ 5.To look this processes with nice heading "top"
+        
+                                         USER PERMISSIONS
+
+when ever we give create a new user that automaticaly creat a group
+To creat a new user "sudo useradd name"
+To set a password for that "sudo passwd name"
+
+                                  OS IS HAVING TWO THINGS 1. KERNEL
+                                                          2. SHELL
+
+TO SEE THE SHELLS "vim /etc/shells"
+
+MAIN POINT TO COME OUT FROM ANY COMMAND ":q!"
+
+To creat the Groups
+"sudo groupadd filename"
+
+TO check the group information
+"sudo vim /etc/group"
+
+To changw the ownership of the file
+"sudo chown owershipname filename"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
